@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedro Henrique - Ensino de Matemática</title>
+</head>
+
+<body>
+    <header class="container text-center mt-5">
+        <img src="img/avatar-perfil.png" alt="Avatar de Pedro Henrique" class="rounded-circle" width="150" height="150">
+        <p class="lead mt-3">Eu sou Pedro Henrique</p>
+        <h1>Ensino Matemática com foco no ITA</h1>
+        <p>Sou estudante do 3º ano do Ensino Médio e estou me preparando para ingressar no Instituto Tecnológico de Aeronáutica (ITA). Criei este site para compartilhar meu conhecimento em matemática e ajudar outros estudantes com conteúdos, dicas e projetos educativos.</p>
+        <p>Minhas áreas de conhecimento</p>
+        <div>
+            <p class="badge bg-secondary">Matemática</p>
+            <p class="badge bg-secondary">Geometria</p>
+            <p class="badge bg-secondary">Álgebra</p>
+            <p class="badge bg-secondary">Cálculo</p>
+            <p class="badge bg-secondary">Matemática Olímpica</p>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2 class="mb-4">Meus projetos</h2>
+        <div class="row">
+            <!-- Você pode substituir os projetos abaixo pelos seus próprios -->
+
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem de projeto">
+                    <div class="card-body">
+                        <h5 class="card-title">Resumos de Matemática para o ITA</h5>
+                        <p class="card-text">Página com resumos organizados por temas (Funções, Geometria, Análise Combinatória etc.), ideal para revisão antes das provas.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem de projeto">
+                    <div class="card-body">
+                        <h5 class="card-title">Simulados de Matemática</h5>
+                        <p class="card-text">Simulados com questões de vestibulares anteriores (ITA, IME, Fuvest) com gabarito e resolução comentada.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem de projeto">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculadora de Funções</h5>
+                        <p class="card-text">Uma ferramenta interativa onde o aluno insere uma função e recebe gráficos, domínio, imagem e propriedades importantes.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modais -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Resumos de Matemática para o ITA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este projeto apresenta uma coletânea de resumos dos principais temas cobrados nas provas do ITA. Os materiais são objetivos, com teoria e fórmulas essenciais, todos organizados em formato de leitura rápida.</p>
+                    <img src="img/projeto-1.png" class="img-fluid w-100" alt="Resumo de matemática">
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver projeto ao vivo</a>
+                    <a href="#">Ver código no GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Simulados de Matemática</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Simulados interativos com questões de anos anteriores dos vestibulares mais difíceis do Brasil. Cada questão possui resolução passo a passo para facilitar a aprendizagem.</p>
+                    <img src="img/projeto-2.png" class="img-fluid w-100" alt="Simulados de matemática">
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver projeto ao vivo</a>
+                    <a href="#">Ver código no GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Calculadora de Funções</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Uma aplicação para estudantes testarem e analisarem funções matemáticas. Basta inserir a função, e o sistema gera automaticamente o gráfico, domínio, imagem e análise de crescimento/decrescimento.</p>
+                    <img src="img/projeto-3.png" class="img-fluid w-100" alt="Calculadora de funções">
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver projeto ao vivo</a>
+                    <a href="#">Ver código no GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/seuusuario">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2025. Produzido por Pedro Henrique</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
